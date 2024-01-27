@@ -6,9 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "copy-nw-package": "cpx nw-config/package.json dist/",
+    "nw-build": "nwbuild --outDir build/ --glob false dist/",
+	"nw-build-all": "npm run build & npm run copy-nw-package & npm run nw-build"
   },
   "devDependencies": {
+    "cpx": "^1.5.0",
+    "nw": "^0.83.0",
+    "nw-builder": "^4.5.4",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
   },

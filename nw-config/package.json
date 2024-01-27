@@ -1,0 +1,8 @@
+{
+  "name": "phaser-typescript-vite",
+  "version": "0.0.0",
+  "main": "index.html",
+  "window": {
+	"resizable": "false"
+  }
+}
