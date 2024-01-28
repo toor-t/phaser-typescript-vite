@@ -7,9 +7,11 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "copy-nw-package": "cpx nw-config/package.json dist/",
+    "pre-nw-build": "cpx nw-config/package.json dist/",
     "nw-build": "nwbuild --outDir build/ --glob false dist/",
-	"nw-build-all": "npm run build & npm run copy-nw-package & npm run nw-build"
+	"nw-build-win": "nwbuild --platform win --outDir build/ --glob false dist/",
+	"nw-build-mac-intel": "nwbuild --platform osx --arch x64 --outDir build/ --glob false dist/",
+	"nw-build-mac-arm": "nwbuild --platform osx --arch arm64 --outDir build/ --glob false dist/"
   },
   "devDependencies": {
     "cpx": "^1.5.0",
