@@ -18,7 +18,7 @@
     "nw": "^0.83.0",
     "nw-builder": "^4.16.0",
     "typescript": "^5.2.2",
-    "vite": "^7.1.11"
+    "vite": "^7.3.2"
   },
   "dependencies": {
     "phaser": "^3.70.0"
